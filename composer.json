@@ -1,0 +1,27 @@
+{
+  "name": "antcool\/redius",
+  "description": "Redis 驱动的用户认证服务",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "龙权",
+      "email": "root@antcool.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "AntCool\\Redius\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AntCool\\Redius\\RediusServiceProvider"
+      ]
+    }
+  }
+}
